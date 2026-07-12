@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="herotext">
+<h1>Number Guessing Game</h1>
+</div>
+<br>
+<div class="herotext">
+    <h1> Enter a number you want to guess</h1>
+</div>
+<div class="hero">
+<input type="number" value="0" min="0" placeholder="Guess a number" id="guess">
+</div>
+
+<div class="guessbtn">
+    <button onclick="checkguess()">
+        Guess
+    </button>
+
+</div>
+
+<div class="typing-container">
+<h1 class="typing-space" id="Results" >
+
+</h1>
+</div>
+<audio src="wrong.swf.mp3"  id="incorrect"></audio>
+<audio src="win.mp3"  id="win"></audio>
+<script src="script.js">
+
+</script>
+    
+</body>
+</html>

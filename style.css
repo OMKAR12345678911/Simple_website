@@ -1,0 +1,158 @@
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+   background-image: radial-gradient(black,gray);
+   color: aliceblue;
+}
+
+.herotext{
+    display: block;
+    justify-items: center;
+    align-items: center;
+
+    -webkit-text-stroke: 2px black;
+    margin-top: 50px;
+    
+
+}
+
+.herotext h1{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    size: 2ch;
+    -webkit-text-stroke: 2px black;
+    margin-top: 50px;
+    
+
+}
+
+.hero{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    
+
+}
+
+.hero input{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 15, 15);
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+
+}
+
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.guessbtn{
+    align-items: center;
+   justify-items: center;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.guessbtn button{
+
+     align-items: center;
+   justify-items: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    
+}
+
+.guessbtn button:hover{
+  animation-name:buttonglow;
+  animation-duration:1s;
+  animation-fill-mode: forwards;
+
+
+}
+
+
+@keyframes buttonglow{
+    from{
+      
+    }
+
+    to{
+        box-shadow:0 0 20px rgb(255, 0, 0),       /* Soft outer glow */
+    0 0 20px rgb(255, 0, 0)    /* Medium outer glow */
+    /* Inner glow for depth */
+    
+    }
+    
+}
+
+
+
+.typing-container{
+display: inline-block;
+display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  min-height: 50vh;       /* Takes up the full screen height */
+  
+}
+
+.typing-space{
+
+
+    font-family: monospace;
+    font-size: 2rem;
+    overflow:hidden;
+    white-space: nowrap;
+    border-right:3px  solid #000;
+    width: 0%;
+    
+
+    animation: 
+    typing 6s steps(14) infinite,
+    blink-caret 0.5s step-end infinite alternate;
+    
+}
+
+
+
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    40%{
+        width: 14ch;
+    }
+    70%{
+     width: 14ch;
+    }
+    100%
+    {
+        width: 0%;
+    }
+}
+
+@keyframes blink-caret {
+    from,to{border-color: transparent;}
+    50%{
+        border-color: #fff;
+    }
+    
+}
+
+
