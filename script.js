@@ -83,3 +83,19 @@ function typeDynamicText(elementId, textToType) {
   element.style.setProperty('--steps', totalCharacters);
   element.style.setProperty('--width', `${totalCharacters}ch`);
 }
+
+
+function wipeDynamicText(elementId) {
+  const element = document.getElementById(elementId);
+  
+  // 1. Inject the text using textContent
+  if(element.length!=0)
+  {
+   
+
+
+
+
+
+}
+}
